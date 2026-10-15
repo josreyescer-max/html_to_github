@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Profesional de Josue Reyes Cerna - UCH">
+    <meta name="keywords" content="Diseño Web, UCH, Portafolio, HTML5, CSS3, Josue Reyes Cerna">
+    <title>Portafolio Profesional | Josue Reyes Cerna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/perfil.svg" alt="Foto de perfil Josue Reyes" class="avatar-logo">
+                <span>Portafolio de diseño web</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img src="img/perfil.svg" alt="Josue Reyes Cerna" class="hero-avatar">
+                <h1>Hola, soy <span>Josue Reyes Cerna</span></h1>
+                <p>Estudiante de Ingeniería de Sistemas e Informática en la Universidad de Ciencias y Humanidades (UCH).</p>
+                <a href="#proyectos" class="btn-primary">Ver Portafolio</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion-sobre-mi">
+            <h2>Sobre Mí</h2>
+            <div class="sobre-mi-container">
+                <div class="sobre-mi-texto">
+                    <p>Hola de nuevo. Soy <strong>Josue Reyes Cerna</strong>, estudiante apasionado de Ingeniería de Sistemas e Informática en la <strong>Universidad de Ciencias y Humanidades (UCH)</strong> en Lima, Perú.</p>
+                    <p>Me interesa profundamente el desarrollo de software, las metodologías ágiles de gestión de proyectos como Scrum, y la creación de experiencias digitales interactivas optimizadas mediante tecnologías modernas en HTML5 y CSS3.</p>
+                    <p>Busco constantemente aprender sobre nuevas herramientas de inteligencia artificial y optimización web para aplicarlas en proyectos académicos y profesionales con un alto estándar de calidad.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="proyectos" class="seccion-proyectos">
+            <h2>Mis Proyectos Destacados</h2>
+            <div class="galeria-grid">
+                <article class="caja-proyecto">
+                    <img src="img/proyecto1.svg" alt="Proyecto 1">
+                    <h3>Sistema de Gestión Académica</h3>
+                    <p>Plataforma web para administración de cursos y calificaciones.</p>
+                </article>
+                <article class="caja-proyecto">
+                    <img src="img/proyecto2.svg" alt="Proyecto 2">
+                    <h3>App de Comercio Electrónico</h3>
+                    <p>Tienda virtual responsiva con integración de carrito de compras.</p>
+                </article>
+                <article class="caja-proyecto">
+                    <img src="img/proyecto3.svg" alt="Proyecto 3">
+                    <h3>Diseño de Interfaz UX/UI</h3>
+                    <p>Prototipado interactivo enfocado en experiencia de usuario.</p>
+                </article>
+                <article class="caja-proyecto">
+                    <img src="img/proyecto4.svg" alt="Proyecto 4">
+                    <h3>Landing Page de Servicios</h3>
+                    <p>Página de aterrizaje optimizada para motores de búsqueda (SEO).</p>
+                </article>
+                <article class="caja-proyecto">
+                    <img src="img/proyecto5.svg" alt="Proyecto 5">
+                    <h3>Dashboard de Analítica</h3>
+                    <p>Panel de control interactivo para la visualización de métricas.</p>
+                </article>
+                <article class="caja-proyecto">
+                    <img src="img/proyecto6.svg" alt="Proyecto 6">
+                    <h3>Aplicación Web Móvil</h3>
+                    <p>Desarrollo web adaptativo enfocado en rendimiento en teléfonos.</p>
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+        <section id="multimedia" class="seccion-multimedia">
+            <h2>Recursos Multimedia</h2>
+            <div class="multimedia-container">
+                <div class="caja-media">
+                    <h3>Audio Presentación</h3>
+                    <audio controls preload="metadata">
+                        <source src="media/audio.wav" type="audio/wav">
+                        
+                    </audio>
+                  
+                </div>
+                <div class="caja-media">
+                    <h3>Video </h3>
+                    <iframe width="100%" height="230" 
+                            src="https://www.youtube.com/embed/TdITcVD64zI" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; webshare" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+                <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna consulta o proyecto en mente? ¡Escríbeme!</p>
+            <form class="form-contacto" action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+                <input type="email" name="correo" placeholder="Tu Correo Institucional / Personal" required>
+                <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Josue Reyes Cerna - Universidad de Ciencias y Humanidades (UCH). Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

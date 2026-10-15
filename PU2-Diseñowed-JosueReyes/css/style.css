@@ -1,0 +1,280 @@
+/* Reseteo Global y Tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header y Navegación */
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.avatar-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Sección de Proyectos (Estructura de Cajas Flotantes) */
+.seccion-proyectos {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.seccion-proyectos h2, .seccion-multimedia h2, .seccion-contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #0f172a;
+}
+
+.caja-proyecto {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.caja-proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.caja-proyecto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #0284c7;
+}
+
+.caja-proyecto p {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+/* Sección Multimedia */
+.seccion-multimedia {
+    background-color: #f1f5f9;
+    padding: 50px 20px;
+}
+
+.multimedia-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.caja-media {
+    float: left;
+    width: 48%;
+    margin: 1%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.caja-media h3 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.caja-media audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Sección Contacto */
+.seccion-contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-contacto input, .form-contacto textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .caja-proyecto {
+        width: 98%;
+        margin: 10px 1%;
+        float: none;
+    }
+
+    .caja-media {
+        width: 98%;
+        margin: 10px 1%;
+        float: none;
+    }
+}
+
+
+/* Estilos para la Sección Sobre Mí */
+.seccion-sobre-mi {
+    padding: 60px 20px;
+    background-color: #f8fafc;
+    text-align: center;
+}
+.seccion-sobre-mi h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+.sobre-mi-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+.sobre-mi-texto p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 15px;
+}
